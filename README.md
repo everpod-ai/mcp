@@ -25,6 +25,16 @@ codex mcp add everpod --url https://everpod.ai/mcp \
   --bearer-token-env-var EVERPOD_API_KEY
 ```
 
+### OpenClaw
+
+```
+openclaw mcp set everpod '{"url": "https://everpod.ai/mcp",
+  "transport": "streamable-http",
+  "headers": {"Authorization": "Bearer YOUR_KEY"}}'
+```
+
+An OpenClaw agent can run this itself, and has the tools from its next message. Or install the [Everpod skill from ClawHub](https://clawhub.ai/everpod/skills/everpod), and the agent connects itself and can move itself onto a pod: `openclaw skills install @everpod/everpod`.
+
 ### Another MCP client
 
 Give it the address and the header. As a JSON entry, in the form Claude Code's `.mcp.json` takes, with the key read from an environment variable so that it is never written into a file you share:
