@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.everpod/everpod",
+  "title": "Everpod",
+  "description": "Managed hosting for open-source AI agents: see your pods and start a new one from your own agent.",
+  "version": "0.1.0",
+  "websiteUrl": "https://everpod.ai/docs/api",
+  "repository": {
+    "url": "https://github.com/everpod-ai/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://everpod.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your API key>. The account's owner makes keys at https://everpod.ai/account/keys.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
