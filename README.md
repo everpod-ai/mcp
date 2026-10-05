@@ -2,7 +2,7 @@
 
 Everpod is an easy way to get your own always-on, persistent cloud computer for AI agents, working in minutes: with a managed OpenClaw agent on it, or as a developer pod with Claude Code and Codex installed. This is Everpod's MCP server, for an agent you already use, such as Claude Code or Codex, to work with your Everpod account for you and start either kind of pod.
 
-A key lets an agent or an app you trust see your pods and start a new one for you, which you then pay for on everpod.ai. It can't pay, change or cancel a plan, delete anything, or open your agent's control panel.
+A key lets an agent or an app you trust see your pods and start a new one for you, which you then pay for on everpod.ai. It can't pay, change or cancel a plan, delete anything, open your agent's control panel, or reach a developer pod's machine.
 
 The server is hosted at `https://everpod.ai/mcp`. There is nothing to install or run. The full reference is at [everpod.ai/docs/api](https://everpod.ai/docs/api).
 
@@ -61,7 +61,7 @@ Start an Everpod pod called Otto and tell me where to pay.
 Start an Everpod developer pod called atlas, with alex as my username, and tell me where to pay.
 ```
 
-For a developer pod, the agent can take you from nothing to a machine you are logged in to; the steps that open the machine are yours. [Get a developer pod with your agent](https://everpod.ai/docs/api#developer-pod) has each step. For an agent that takes skills, the same steps are a skill: copy the folder `everpod-developer-pod` from [github.com/everpod-ai/skills](https://github.com/everpod-ai/skills) into your agent's skills folder.
+For a developer pod, the agent can take you from nothing to a machine you are logged in to; the steps that open the machine are yours. [Get a developer pod with your agent](https://everpod.ai/docs/api#developer-pod) has each step. For an agent that takes skills, the same steps are a skill, `everpod-developer-pod`, from [github.com/everpod-ai/skills](https://github.com/everpod-ai/skills). Claude Code installs it with `claude plugin marketplace add everpod-ai/skills` and then `claude plugin install everpod-developer-pod@everpod`; Codex with `codex plugin marketplace add everpod-ai/skills` and then `codex plugin add everpod-developer-pod@everpod`. For another agent, copy its folder into the agent's skills folder.
 
 ## Tools
 
