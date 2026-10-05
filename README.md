@@ -33,7 +33,7 @@ openclaw mcp set everpod '{"url": "https://everpod.ai/mcp",
   "headers": {"Authorization": "Bearer YOUR_KEY"}}'
 ```
 
-An OpenClaw agent can run this itself, and has the tools from its next message. Or install the [Everpod skill from ClawHub](https://clawhub.ai/everpod/skills/everpod), and the agent connects itself and can move itself onto a pod: `openclaw skills install @everpod/everpod`.
+An OpenClaw agent can run this itself, and has the tools from its next message. Or install the [Everpod skill from ClawHub](https://clawhub.ai/everpod/skills/everpod), and the agent connects itself, starts a new agent or a developer pod for you, and can move itself onto a pod: `openclaw skills install @everpod/everpod`.
 
 ### Another MCP client
 
@@ -61,7 +61,7 @@ Start an Everpod pod called Otto and tell me where to pay.
 Start an Everpod developer pod called atlas, with alex as my username, and tell me where to pay.
 ```
 
-For a developer pod, the agent can take you from nothing to a machine you are logged in to; the steps that open the machine are yours. [Get a developer pod with your agent](https://everpod.ai/docs/api#developer-pod) has each step.
+For a developer pod, the agent can take you from nothing to a machine you are logged in to; the steps that open the machine are yours. [Get a developer pod with your agent](https://everpod.ai/docs/api#developer-pod) has each step. For an agent that takes skills, the same steps are a skill: copy the folder `everpod-developer-pod` from [github.com/everpod-ai/skills](https://github.com/everpod-ai/skills) into your agent's skills folder.
 
 ## Tools
 
