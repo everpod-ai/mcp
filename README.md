@@ -1,6 +1,6 @@
 # Everpod MCP server
 
-Everpod runs an AI agent on a pod: a private, always-on cloud computer of its own. This is Everpod's MCP server, for an agent you already use, such as Claude Code or Codex, to work with your Everpod account for you.
+Everpod is an easy way to get your own always-on, persistent cloud computer for AI agents, working in minutes: with a managed OpenClaw agent on it, or as a developer pod with Claude Code and Codex installed. This is Everpod's MCP server, for an agent you already use, such as Claude Code or Codex, to work with your Everpod account for you and start either kind of pod.
 
 A key lets an agent or an app you trust see your pods and start a new one for you, which you then pay for on everpod.ai. It can't pay, change or cancel a plan, delete anything, or open your agent's control panel.
 
@@ -57,11 +57,17 @@ Then ask the agent, for example:
 Start an Everpod pod called Otto and tell me where to pay.
 ```
 
+```
+Start an Everpod developer pod called atlas, with alex as my username, and tell me where to pay.
+```
+
+For a developer pod, the agent can take you from nothing to a machine you are logged in to; the steps that open the machine are yours. [Get a developer pod with your agent](https://everpod.ai/docs/api#developer-pod) has each step.
+
 ## Tools
 
-- `list_pods`: List the pods on the owner's Everpod account, oldest first. Each has its status and the link its owner needs: pay_url while it is awaiting payment, url (the pod's page on everpod.ai) once it is paid.
-- `get_pod`: Read one pod by its id: its status and the link its owner needs. This is how to check whether a started pod has been paid for, and whether it is ready.
-- `start_pod`: Start a new pod for the owner, under the name they want for their agent. This call charges nothing: the pod stays unpaid until its owner opens pay_url in their browser and pays there. While the account has an unpaid pod, calling again returns that same pod, renamed if the name differs.
+- `list_pods`: List the pods on the owner's Everpod account, oldest first. Each has its kind, its status and the link its owner needs: pay_url while it is awaiting payment, url (the pod's page on everpod.ai) once it is paid.
+- `get_pod`: Read one pod by its id: its status and the link its owner needs. This is how to check whether a started pod has been paid for, whether it is ready, and for a developer pod, which of its owner's steps to connect it are done.
+- `start_pod`: Start a new pod for the owner: an OpenClaw pod, or with kind 'developer' a developer pod. This call charges nothing: the pod stays unpaid until its owner opens pay_url in their browser and pays there. While the account has an unpaid pod, calling again returns that same pod, changed to the name and kind now asked for.
 
 ## From code
 
