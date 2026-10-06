@@ -1,6 +1,6 @@
 # Everpod MCP server
 
-Everpod is an easy way to get your own always-on, persistent cloud computer for AI agents, working in minutes: with a managed OpenClaw agent on it, or as a developer pod with Claude Code and Codex installed. This is Everpod's MCP server, for an agent you already use, such as Claude Code or Codex, to work with your Everpod account for you and start either kind of pod.
+Everpod is an easy way to get your own always-on, persistent cloud computer for AI agents, working in minutes: with a managed OpenClaw agent on it, or as a developer pod with Claude Code, Codex or both installed. This is Everpod's MCP server, for an agent you already use, such as Claude Code or Codex, to work with your Everpod account for you and start either kind of pod.
 
 A key lets an agent or an app you trust see your pods and start a new one for you, which you then pay for on everpod.ai. It can't pay, change or cancel a plan, delete anything, open your agent's control panel, or reach a developer pod's machine.
 
