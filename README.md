@@ -33,7 +33,7 @@ openclaw mcp set everpod '{"url": "https://everpod.ai/mcp",
   "headers": {"Authorization": "Bearer YOUR_KEY"}}'
 ```
 
-An OpenClaw agent can run this itself, and has the tools from its next message. Or install the [Everpod skill from ClawHub](https://clawhub.ai/everpod/skills/everpod), and the agent connects itself, starts a new agent or a developer pod for you, and can move itself onto a pod: `openclaw skills install @everpod/everpod`.
+An OpenClaw agent can run this itself, and has the tools from its next message. Or install the [Everpod skill from ClawHub](https://clawhub.ai/everpod/skills/everpod), and the agent connects itself, starts a new agent or a developer pod for you, and prepares its own move onto a pod: `openclaw skills install @everpod/everpod`.
 
 ### Another MCP client
 
