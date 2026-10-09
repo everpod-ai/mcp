@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.everpod/everpod",
   "title": "Everpod",
-  "description": "Your always-on cloud computer for AI agents: Claude Code, Codex, OpenCode, Pi, or managed OpenClaw.",
-  "version": "0.2.1",
+  "description": "Cloud computers for Claude Code, Codex, OpenCode, Pi, Hermes or OpenClaw, or OpenClaw run for you.",
+  "version": "0.2.2",
   "websiteUrl": "https://everpod.ai/docs/api",
   "repository": {
     "url": "https://github.com/everpod-ai/mcp",
